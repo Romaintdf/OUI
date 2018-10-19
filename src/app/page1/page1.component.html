@@ -1,0 +1,7 @@
+
+<app-test *ngFor="let Task of task"
+          [TaskName]="Task.name"
+          [TaskStatus]="Task.status"
+            (NewStatus)="display($event)"
+>
+</app-test>

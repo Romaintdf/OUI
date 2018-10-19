@@ -6,5 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'mon-projet-routage';
+  test = "Done";
+  task = [
+    {
+      name: 'Download Notepad',
+      status: 'ToBedone'
+    },
+    {
+      name: 'Find a job',
+      status: 'ToBeDone'
+    },
+    {
+      name: 'Help Quentin',
+      status: 'ToBeDone'
+    }
+  ];
+
+  constructor() {
+    setTimeout(
+        () => {
+
+        }, 4000
+    );
+  }
 }
